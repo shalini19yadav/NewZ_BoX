@@ -1,0 +1,69 @@
+/* body{
+    background-color: pink !important;
+} */
+.topHeadlinesContainer{
+    position: absolute;
+    animation: move 100s linear infinite;
+}
+@keyframes move{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+.headings{
+    position: relative;
+    overflow: hidden;
+}
+
+.headingTitle{
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    color: white !important;
+}
+.navbar a{
+    color: black !important;
+}
+
+.navbar .nav-item:hover a{
+    color:rgb(219, 30, 30) !important ;
+}
+.update:hover a{
+    color:rgb(219, 30, 30) !important ;
+}
+.navbar .Box{
+    color: rgb(219, 30, 30) !important;
+}
+.navbar{
+    box-shadow: 0px 0px 10px 10px gainsboro;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.navbar .news{
+    font-weight: 700;
+    font-size: 25px;
+}
+.card{
+    cursor: pointer;
+}
+.card-text:hover, .card-title:hover{
+    color: rgb(219, 30, 30) !important;
+    transform: translateX(2px) !important;
+    transition: 0.2s linear;
+}
+@media only screen and (max-width:570px){
+    .headings{
+        display: none;
+    }
+    
+    .DailyNews{
+        width: 100% !important;
+    }
+}
