@@ -7,7 +7,7 @@ const TopHeadlines = () => {
     const [news, setnews] = useState([]);
 
     const getData = async () => {
-        let res = await axios(` https://newsapi.org/v2/top-headlines?country=in&apiKey=5aab931fd3aa486dab4b7922ebca558d`)
+        let res = await axios(`https://newsapi.org/v2/top-headlines?country=us&apiKey=5aab931fd3aa486dab4b7922ebca558d`)
         console.log(res.data.articles)
         setnews(res.data.articles)
     }
